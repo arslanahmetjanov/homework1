@@ -33,15 +33,23 @@ int, float, complex, string, tuple, frozenset (неизменяемая верс
 
 ## Можно ли возводить списки, словари и множества в степень?
 
-> TypeError: unsupported operand type(s) for ** or pow():
+Нельзя:
+
+> TypeError: unsupported operand type(s) for ** or pow(): 'list' and 'int'
+
+> TypeError: unsupported operand type(s) for ** or pow(): 'set' and 'int'
+
+> TypeError: unsupported operand type(s) for ** or pow(): 'tuple' and 'int'
 
 ## Можно ли использовать find для списков, словарей и множеств?
 
->> AttributeError: 'list' object has no attribute 'find'
+Нельзя:
 
->> AttributeError: 'set' object has no attribute 'find'
+> AttributeError: 'list' object has no attribute 'find'
 
->> AttributeError: 'tuple' object has no attribute 'find'
+> AttributeError: 'set' object has no attribute 'find'
+
+> AttributeError: 'tuple' object has no attribute 'find'
 
 ## С помощью какой команды можно извлечь запятые из строки “py,th,on”? Докажите.
 
