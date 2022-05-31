@@ -38,14 +38,18 @@ int, float, complex, string, tuple, frozenset (неизменяемая верс
 ## Можно ли использовать find для списков, словарей и множеств?
 
 >> AttributeError: 'list' object has no attribute 'find'
+
 >> AttributeError: 'set' object has no attribute 'find'
+
 >> AttributeError: 'tuple' object has no attribute 'find'
 
 ## С помощью какой команды можно извлечь запятые из строки “py,th,on”? Докажите.
 
 Можно:
 
-<first_string="Hello, World!"
-second_string = first_string.replace(",","")
-print(second_string)>
+<first_string="Hello, World!">
+
+<second_string = first_string.replace(",","")>
+
+<print(second_string)>
 
