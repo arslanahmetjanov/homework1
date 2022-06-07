@@ -66,17 +66,17 @@ def find_count_of_item_in_str(some_str):
     if (type(some_str) == str):
         length_str = len(some_str)
         item_max = ""
-        count_max = 0
+        counter_max = 0
         for i in range(length_str):
             item = some_str[i]
-            count = 0
+            counter = 0
             for i in some_str:
                 if i == item:
-                    count += 1
-            if count > count_max:
-                count_max = count
+                    counter += 1
+            if counter > counter_max:
+                counter_max = counter
                 item_max = item
-        return f"{item_max} встречается чаще всего, а именно {count_max} раз(-а)"
+        return f"{item_max} встречается чаще всего, а именно {counter_max} раз(-а)"
     else:
         return("Ошибка в типах данных параметров. Параметр - строка")
 
@@ -223,7 +223,7 @@ def custom_len_of_set(some_set, choice):
     else:
         return ("Ошибка в типе данных параметра. Параметр - множество")
 
-# Напишите скрипт для проверки, входит ли элемент в множество.
+# 25. Напишите скрипт для проверки, входит ли элемент в множество.
 def check_value_in_set(some_set, some_value):
     if (type(some_set) == set):
         if some_value in some_set:
