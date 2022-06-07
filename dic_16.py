@@ -1,20 +1,9 @@
-dic = {}
-length = int(input("Введите длину словаря:"))
-for i in range(0,length):
-  dic[input("Ключ:")] = input("Значение:")
-
-print("Словарь", dic)
-
-ser_value = input("Введите ключ для поиска: ")
-if ser_value.isdigit():
-    ser_value = int(ser_value)
-    
-for k in dic:
-    if k == ser_value:
-        ser_value = true
-
-
-if ser_value:
-    print("Ключ найден")
-else:
-    print("Замок закрыт")
+# 16. Напишите скрипт, проверяющий, существует ли заданный ключ в словаре.
+def key_in_dict (some_dict, some_key):
+     if (type(some_dict) == dict and type(some_key) == int):
+        if some_key in some_dict:
+             return True
+        else:
+            return False
+     else:
+        return ("Ошибка в типе данных параметров. Параметры - словарь и ключ")

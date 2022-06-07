@@ -1,4 +1,4 @@
-def final_plus_end(some_str):
+def final_plus_end_for_str(some_str):
     if (type(some_str) == str):
         length = len(some_str)
         if length >=2:
@@ -9,5 +9,4 @@ def final_plus_end(some_str):
     else:
         print("Ошибка в типе данных параметра. Параметр - строка")
         
-str = input("Введите строку:")
-print(final_plus_end(str))
+print(final_plus_end_for_str("abc"))

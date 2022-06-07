@@ -1,11 +1,10 @@
-my_tuple = tuple()
+def add_set(some_tuple, some_value):
+    if (type(some_tuple) == tuple):
+        some_list = list(some_tuple)
+        some_list.append(some_value)
+        some_tuple = set(some_list)
+        return some_tuple
+    else:
+        return ("Ошибка в типе данных параметра. Параметр - кортеж")
 
-print(type(my_tuple))
-
-full_name = 'Никифоров Дмитрий Анатольевич'
-city = 'Москва'
-phone_number = '929-876-54-32'
-
-contacts = (full_name, city, phone_number)
-
-print(contacts)
+print(add_set((1, 2, 3), 4))

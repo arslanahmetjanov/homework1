@@ -1,8 +1,11 @@
-def string_register(some_string):
-    if some_string.isupper():
-        return some_string.lower()
+def change_register_str(some_str):
+    if (type(some_str) == str):
+        if some_str.isupper():
+            return some_str.lower()
+        else:
+            return some_str.upper()
     else:
-        return some_string.upper()
+        print("Ошибка в типе данных параметра. Параметр - строка")
         
-str = input("Введите строку:")
-print(string_register(str))
+print(change_register_str("sss"))
+print(change_register_str("AAA"))
